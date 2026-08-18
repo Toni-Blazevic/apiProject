@@ -1,0 +1,11 @@
+D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Domain\bin\Debug\net8.0\Projekt.Domain.deps.json
+D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Domain\bin\Debug\net8.0\Projekt.Domain.dll
+D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Domain\bin\Debug\net8.0\Projekt.Domain.pdb
+D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Domain\obj\Debug\net8.0\Projekt.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Domain\obj\Debug\net8.0\Projekt.Domain.AssemblyInfoInputs.cache
+D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Domain\obj\Debug\net8.0\Projekt.Domain.AssemblyInfo.cs
+D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Domain\obj\Debug\net8.0\Projekt.Domain.csproj.CoreCompileInputs.cache
+D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Domain\obj\Debug\net8.0\Projekt.Domain.dll
+D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Domain\obj\Debug\net8.0\refint\Projekt.Domain.dll
+D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Domain\obj\Debug\net8.0\Projekt.Domain.pdb
+D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Domain\obj\Debug\net8.0\ref\Projekt.Domain.dll
