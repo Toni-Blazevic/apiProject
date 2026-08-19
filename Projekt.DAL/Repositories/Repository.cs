@@ -12,8 +12,8 @@ namespace Projekt.DAL.Repositories
 {
     public class Repository<T> : IRepository<T> where T : BaseEntity
     {
-        private readonly ProjektContext _context;
-        private readonly DbSet<T> _dbSet;
+        protected readonly ProjektContext _context;
+        protected readonly DbSet<T> _dbSet;
 
         public Repository(ProjektContext context)
         {

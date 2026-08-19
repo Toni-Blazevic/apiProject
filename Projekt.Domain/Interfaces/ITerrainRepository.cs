@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace Projekt.Domain.Interfaces
 {
-    public interface ISportCentarRepository: IRepository<SportCentar>
+    public interface ITerrainRepository:IRepository<Terrain>
     {
-        public Task<SportCentar?> GetSportCentarWithTerrainsAsync(int id);
     }
 }

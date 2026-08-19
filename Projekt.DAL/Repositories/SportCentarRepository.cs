@@ -1,4 +1,5 @@
-﻿using Projekt.DAL.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using Projekt.DAL.Data;
 using Projekt.Domain.Entities;
 using Projekt.Domain.Interfaces;
 using System;
@@ -13,6 +14,13 @@ namespace Projekt.DAL.Repositories
     {
         public SportCentarRepository(ProjektContext context) : base(context)
         {
+        }
+
+        public async Task<SportCentar?> GetSportCentarWithTerrainsAsync(int id)
+        {
+            return await _dbSet
+                .Include(sc => sc.Terrains)
+                .FirstOrDefaultAsync(sc => sc.Id == id);
         }
     }
 }

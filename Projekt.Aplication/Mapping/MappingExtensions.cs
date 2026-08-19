@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Projekt.Domain.Entities;
 using Projekt.Aplication.DTO.SportCentar;
+using Projekt.Aplication.DTO.Terrain;
 
 namespace Projekt.Aplication.Mapping
 {
@@ -42,6 +43,18 @@ namespace Projekt.Aplication.Mapping
                 Addres = sportCentar.Adress,
                 City = sportCentar.City,
                 Description = sportCentar.Description
+            };
+        }
+
+        public static Terrain ToEntity(this CreateTerrainDto terrain)
+        {
+            return new Terrain
+            {
+                Name = terrain.Name,
+                SportCentarId = terrain.SportCentarId,
+                SportTypeId = terrain.SportTypeId,
+                PriceByHour = terrain.PriceByHour,
+                IsInDoor = terrain.IsInDoor
             };
         }
     }
