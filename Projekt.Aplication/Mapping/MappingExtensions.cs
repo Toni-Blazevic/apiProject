@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Projekt.Domain.Entities;
 using Projekt.Aplication.DTO.SportCentar;
 using Projekt.Aplication.DTO.Terrain;
+using Projekt.Aplication.DTO.Reservation;
 
 namespace Projekt.Aplication.Mapping
 {
@@ -70,6 +71,18 @@ namespace Projekt.Aplication.Mapping
                 terrain.PriceByHour,
                 terrain.IsInDoor
             );
+        }
+        #endregion
+        #region Resrvation
+        public static Reservation ToEntity(this CreateReservationDto dto)
+        {
+            return new Reservation
+            {
+                TerrainId = dto.TerrainId,
+                StartTime = dto.StartTime,
+                EndTime = dto.EndTime,
+                TotalPrice = dto.TotalPrice
+            };
         }
         #endregion
     }
