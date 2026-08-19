@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projekt.Aplication.DTO.Payment
 {
-    internal class CreatePaymentDto
+    public class CreatePaymentDto
     {
     }
 }

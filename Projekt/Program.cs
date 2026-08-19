@@ -9,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<ISportCentarService, SportCentarService>();
+builder.Services.AddScoped<ISportCentarRepository, SportCentarRepository>();
 
 builder.Services.AddDbContext<Projekt.DAL.Data.ProjektContext>
     (options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));

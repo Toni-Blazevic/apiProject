@@ -15,3 +15,4 @@ D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projek
 D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.DAL\obj\Debug\net8.0\Projekt.DAL.pdb
 D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.DAL\obj\Debug\net8.0\Projekt.DAL.genruntimeconfig.cache
 D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.DAL\obj\Debug\net8.0\ref\Projekt.DAL.dll
+D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.DAL\obj\Debug\net8.0\Projekt.DAL.sourcelink.json

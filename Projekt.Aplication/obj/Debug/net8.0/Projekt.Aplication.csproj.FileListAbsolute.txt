@@ -15,3 +15,4 @@ D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projek
 D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\obj\Debug\net8.0\refint\Projekt.Aplication.dll
 D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\obj\Debug\net8.0\Projekt.Aplication.pdb
 D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\obj\Debug\net8.0\ref\Projekt.Aplication.dll
+D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\obj\Debug\net8.0\Projekt.Aplication.sourcelink.json

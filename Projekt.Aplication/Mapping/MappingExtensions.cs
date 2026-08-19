@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Projekt.Domain.Entities;
+using Projekt.Aplication.DTO.SportCentar;
 
 namespace Projekt.Aplication.Mapping
 {
@@ -31,6 +32,17 @@ namespace Projekt.Aplication.Mapping
                     user.Email,
                     user.PhoneNumber
                 );
+        }
+
+        public static SportCentar ToEntity(this CreateSportCentarDto sportCentar)
+        {
+            return new SportCentar
+            {
+                Name = sportCentar.Name,
+                Addres = sportCentar.Adress,
+                City = sportCentar.City,
+                Description = sportCentar.Description
+            };
         }
     }
 }

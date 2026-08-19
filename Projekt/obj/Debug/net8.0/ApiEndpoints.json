@@ -1,5 +1,94 @@
 [
   {
+    "ContainingType": "Projekt.API.Controllers.SportCenterController",
+    "Method": "GetAllSportCenter",
+    "RelativePath": "api/SportCenter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projekt.API.Controllers.SportCenterController",
+    "Method": "CreateSportCenter",
+    "RelativePath": "api/SportCenter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sportCenter",
+        "Type": "Projekt.Aplication.DTO.SportCentar.CreateSportCentarDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projekt.API.Controllers.SportCenterController",
+    "Method": "GetSportCenterById",
+    "RelativePath": "api/SportCenter/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projekt.API.Controllers.SportCenterController",
+    "Method": "DeleteSportCentar",
+    "RelativePath": "api/SportCenter/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projekt.API.Controllers.SportCenterController",
+    "Method": "UpdateSportCenter",
+    "RelativePath": "api/SportCenter/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "newSportCentar",
+        "Type": "Projekt.Aplication.DTO.SportCentar.CreateSportCentarDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projekt.API.Controllers.UserController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/User",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Projekt.API.Controllers.UserController",
     "Method": "CreateUser",
     "RelativePath": "api/User",
@@ -66,16 +155,6 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Projekt.API.Controllers.UserController",
-    "Method": "GetAllUsers",
-    "RelativePath": "api/User/all",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": []
   }
 ]

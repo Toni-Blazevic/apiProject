@@ -13,6 +13,6 @@ namespace Projekt.Domain.Entities
         public string Addres { get; set; }
         public string City { get; set; }
         public string Description { get; set; }
-        public ICollection<Terrain> Terrains { get; set; }=new List<Terrain>();
+        public ICollection<Terrain> Terrains { get; set; } = new List<Terrain>();
     }
 }

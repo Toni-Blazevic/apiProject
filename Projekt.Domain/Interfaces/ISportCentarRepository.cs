@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Projekt.Domain.Interfaces
 {
-    public interface IPaymentRepository: IRepository<Payment>
+    public interface ISportCentarRepository: IRepository<SportCentar>
     {
     }
 }

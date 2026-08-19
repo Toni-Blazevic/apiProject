@@ -143,3 +143,4 @@ D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projek
 D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt\obj\Debug\net8.0\Projekt.API.sourcelink.json

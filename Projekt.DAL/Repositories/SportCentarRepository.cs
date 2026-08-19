@@ -1,5 +1,6 @@
 ﻿using Projekt.DAL.Data;
 using Projekt.Domain.Entities;
+using Projekt.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace Projekt.DAL.Repositories
 {
-    public class PaymentRepository : Repository<Payment>
+    public class SportCentarRepository : Repository<SportCentar>, ISportCentarRepository
     {
-        public PaymentRepository(ProjektContext context) : base(context)
+        public SportCentarRepository(ProjektContext context) : base(context)
         {
         }
     }

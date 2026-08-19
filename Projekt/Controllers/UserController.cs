@@ -21,7 +21,7 @@ namespace Projekt.API.Controllers
             return Ok(user);
         }
 
-        [HttpGet("all")]
+        [HttpGet]
         public async Task<ActionResult> GetAllUsers()
         {
             return Ok(await _userService.GetAllUsersAsync());
