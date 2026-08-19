@@ -153,6 +153,41 @@
         }
       }
     },
+    "/api/SportType/{id}": {
+      "get": {
+        "tags": [
+          "SportType"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SportType": {
+      "get": {
+        "tags": [
+          "SportType"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Terrain/{id}": {
       "get": {
         "tags": [
