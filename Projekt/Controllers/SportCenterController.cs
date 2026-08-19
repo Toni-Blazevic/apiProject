@@ -35,10 +35,10 @@ namespace Projekt.API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> CreateSportCenter([FromBody] CreateSportCentarDto sportCenter)
+        public async Task<ActionResult> CreateSportCenter([FromBody] CreateSportCentarDto dto)
         {
-            await _sportCenterService.CreateAsync(sportCenter);
-            return Ok(sportCenter);
+            var sportCentar = await _sportCenterService.CreateAsync(dto);
+            return CreatedAtAction(nameof(GetSportCenterById), new { id = sportCentar.Id }, sportCentar);
         }
 
         [HttpDelete("{id}")]
@@ -51,6 +51,7 @@ namespace Projekt.API.Controllers
             }
             return NoContent();
         }
+        
         [HttpPut("{id}")]
         public async Task<ActionResult> UpdateSportCenter(int id, [FromBody] CreateSportCentarDto newSportCentar)
         {
@@ -59,6 +60,17 @@ namespace Projekt.API.Controllers
                 return NotFound();
             }
             return NoContent();
+        }
+
+        [HttpGet("{id}/terrains")]
+        public async Task<ActionResult> GetSportCentarWithTerrains(int id)
+        {
+            var sportCentar = await _sportCenterService.GetSportCentarWithTerrains(id);
+            if(sportCentar == null)
+            {
+                return NotFound();
+            }
+            return Ok(sportCentar);
         }
     }
 }

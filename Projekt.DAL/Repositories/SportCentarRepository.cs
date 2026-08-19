@@ -18,7 +18,7 @@ namespace Projekt.DAL.Repositories
 
         public async Task<SportCentar?> GetSportCentarWithTerrainsAsync(int id)
         {
-            return await _dbSet
+              return await _dbSet
                 .Include(sc => sc.Terrains)
                 .FirstOrDefaultAsync(sc => sc.Id == id);
         }

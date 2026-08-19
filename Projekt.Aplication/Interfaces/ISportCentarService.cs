@@ -15,5 +15,6 @@ namespace Projekt.Aplication.Interfaces
         Task<IEnumerable<SportCentar>> GetAllAsync();
         Task<bool> DeleteByIdAsync(int id);
         Task<bool> UpdateAsync(int id, CreateSportCentarDto newSportCentar);
+        Task<SportCentarWithTerrainsDto?> GetSportCentarWithTerrains(int id);
     }
 }

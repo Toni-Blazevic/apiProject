@@ -18,7 +18,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "sportCenter",
+        "Name": "dto",
         "Type": "Projekt.Aplication.DTO.SportCentar.CreateSportCentarDto",
         "IsRequired": true
       }
@@ -73,6 +73,101 @@
       {
         "Name": "newSportCentar",
         "Type": "Projekt.Aplication.DTO.SportCentar.CreateSportCentarDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projekt.API.Controllers.SportCenterController",
+    "Method": "GetSportCentarWithTerrains",
+    "RelativePath": "api/SportCenter/{id}/terrains",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projekt.API.Controllers.TerrainController",
+    "Method": "GetAllTerrain",
+    "RelativePath": "api/Terrain",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projekt.API.Controllers.TerrainController",
+    "Method": "CreateTerain",
+    "RelativePath": "api/Terrain",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Projekt.Aplication.DTO.Terrain.CreateTerrainDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projekt.API.Controllers.TerrainController",
+    "Method": "GetTerrainById",
+    "RelativePath": "api/Terrain/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projekt.API.Controllers.TerrainController",
+    "Method": "DeleteTerrainById",
+    "RelativePath": "api/Terrain/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projekt.API.Controllers.TerrainController",
+    "Method": "UpdateTerrain",
+    "RelativePath": "api/Terrain/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "newTerrain",
+        "Type": "Projekt.Aplication.DTO.Terrain.CreateTerrainDto",
         "IsRequired": true
       }
     ],

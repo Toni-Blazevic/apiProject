@@ -58,9 +58,8 @@ namespace Projekt.Aplication.Services
                 return false;
             }
 
-            Terrain terrainEntity = await _terrainRepository.GetByIdAsync(id);
-
-           terrainEntity.Id = id;
+            Terrain terrainEntity = newTerrain.ToEntity();
+            terrainEntity.Id = id;
 
             await _terrainRepository.UpdateAsync(terrainEntity);
             await _terrainRepository.SaveChangesAsync();

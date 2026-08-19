@@ -12,6 +12,7 @@ namespace Projekt.Aplication.Mapping
 {
     public static class MappingExtensions
     {
+        #region User
         public static User ToEntity(this CreateUserDto user)
         {
             return new User
@@ -34,7 +35,8 @@ namespace Projekt.Aplication.Mapping
                     user.PhoneNumber
                 );
         }
-
+        #endregion
+        #region SportCentar
         public static SportCentar ToEntity(this CreateSportCentarDto sportCentar)
         {
             return new SportCentar
@@ -45,7 +47,8 @@ namespace Projekt.Aplication.Mapping
                 Description = sportCentar.Description
             };
         }
-
+        #endregion
+        #region Terrain
         public static Terrain ToEntity(this CreateTerrainDto terrain)
         {
             return new Terrain
@@ -57,5 +60,17 @@ namespace Projekt.Aplication.Mapping
                 IsInDoor = terrain.IsInDoor
             };
         }
+
+        public static TerrainWithNoSportCentar ToTerrainNoSportCentar(this Terrain terrain)
+        {
+            return new TerrainWithNoSportCentar
+            (
+                terrain.Name,
+                terrain.SportTypeId,
+                terrain.PriceByHour,
+                terrain.IsInDoor
+            );
+        }
+        #endregion
     }
 }
