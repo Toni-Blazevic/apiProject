@@ -1,5 +1,83 @@
 [
   {
+    "ContainingType": "Projekt.API.Controllers.ReservationController",
+    "Method": "GetAllReservation",
+    "RelativePath": "api/Reservation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projekt.API.Controllers.ReservationController",
+    "Method": "CreateReservation",
+    "RelativePath": "api/Reservation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "TerrainId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "StartTime",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "EndTime",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "TotalPrice",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projekt.API.Controllers.ReservationController",
+    "Method": "GetReservationById",
+    "RelativePath": "api/Reservation/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projekt.API.Controllers.ReservationController",
+    "Method": "DeleteReservationById",
+    "RelativePath": "api/Reservation/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Projekt.API.Controllers.SportCenterController",
     "Method": "GetAllSportCenter",
     "RelativePath": "api/SportCenter",
@@ -81,13 +159,13 @@
   {
     "ContainingType": "Projekt.API.Controllers.SportCenterController",
     "Method": "GetSportCentarWithTerrains",
-    "RelativePath": "api/SportCenter/{id}/terrains",
+    "RelativePath": "api/SportCenter/{sportCentarId}/terrains",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "sportCentarId",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -194,6 +272,22 @@
       {
         "Name": "newTerrain",
         "Type": "Projekt.Aplication.DTO.Terrain.CreateTerrainDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projekt.API.Controllers.TerrainController",
+    "Method": "GetTerrainWithReviewsAsync",
+    "RelativePath": "api/Terrain/{terrainId}/reviews",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "terrainId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

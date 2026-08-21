@@ -10,8 +10,4 @@
     <ProjectReference Include="..\Projekt.DAL\Projekt.DAL.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="DTO\Review\" />
-  </ItemGroup>
-
 </Project>

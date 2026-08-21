@@ -8,6 +8,7 @@ using Projekt.Domain.Entities;
 using Projekt.Aplication.DTO.SportCentar;
 using Projekt.Aplication.DTO.Terrain;
 using Projekt.Aplication.DTO.Reservation;
+using Projekt.Aplication.DTO.Review;
 
 namespace Projekt.Aplication.Mapping
 {
@@ -72,8 +73,23 @@ namespace Projekt.Aplication.Mapping
                 terrain.IsInDoor
             );
         }
+
+        public static TerrainWithReviews ToTerrainWithReviews(this Terrain terrain)
+        {
+            return new TerrainWithReviews
+                (
+                    terrain.Name,
+                    terrain.SportTypeId,
+                    terrain.SportCentarId,
+                    terrain.PriceByHour,
+                    terrain.IsInDoor,
+                    terrain.Reviews.
+                        Select<Review, RewievWithNoTerrain>(r => r.ToReviewWithNoTerrain()).
+                        ToList()
+                );
+        }
         #endregion
-        #region Resrvation
+        #region Reservation
         public static Reservation ToEntity(this CreateReservationDto dto)
         {
             return new Reservation
@@ -83,6 +99,18 @@ namespace Projekt.Aplication.Mapping
                 EndTime = dto.EndTime,
                 TotalPrice = dto.TotalPrice
             };
+        }
+        #endregion
+        #region Rewiev
+        public static RewievWithNoTerrain ToReviewWithNoTerrain(this Review review)
+        {
+            return new RewievWithNoTerrain
+                (
+                    review.UserId,
+                    review.Rating,
+                    review.Comment,
+                    review.CreatedAt
+                );
         }
         #endregion
     }

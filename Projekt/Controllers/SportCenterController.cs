@@ -62,10 +62,10 @@ namespace Projekt.API.Controllers
             return NoContent();
         }
 
-        [HttpGet("{id}/terrains")]
-        public async Task<ActionResult> GetSportCentarWithTerrains(int id)
+        [HttpGet("{sportCentarId}/terrains")]
+        public async Task<ActionResult> GetSportCentarWithTerrains(int sportCentarId)
         {
-            var sportCentar = await _sportCenterService.GetSportCentarWithTerrains(id);
+            var sportCentar = await _sportCenterService.GetSportCentarWithTerrains(sportCentarId);
             if(sportCentar == null)
             {
                 return NotFound();

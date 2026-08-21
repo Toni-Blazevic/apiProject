@@ -51,6 +51,11 @@ namespace Projekt.Aplication.Services
             return await _terrainRepository.GetByIdAsync(id);
         }
 
+        public async Task<TerrainWithReviews?> GetTerrainWithReviewsAsync(int terrainId)
+        {
+            return (await _terrainRepository.GetTerrainWithRewiesAsync(terrainId)).ToTerrainWithReviews();
+        }
+
         public async Task<bool> UpdateByIdAsync(int id, CreateTerrainDto newTerrain)
         {
             if (!await _terrainRepository.ExistsAsync(id))

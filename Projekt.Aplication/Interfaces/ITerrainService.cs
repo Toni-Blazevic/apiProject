@@ -15,6 +15,7 @@ namespace Projekt.Aplication.Interfaces
         public Task<IEnumerable<Terrain>> GetAllAsync();
         public Task<bool> DeleteByIdAsync(int id);
         public Task<bool> UpdateByIdAsync(int id, CreateTerrainDto newTerrain);
+        public Task<TerrainWithReviews?> GetTerrainWithReviewsAsync(int terrainId);
 
     }
 }

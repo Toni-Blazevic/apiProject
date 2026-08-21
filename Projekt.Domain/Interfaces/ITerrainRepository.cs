@@ -9,5 +9,6 @@ namespace Projekt.Domain.Interfaces
 {
     public interface ITerrainRepository:IRepository<Terrain>
     {
+        public Task<Terrain?> GetTerrainWithRewiesAsync(int terrainId);
     }
 }

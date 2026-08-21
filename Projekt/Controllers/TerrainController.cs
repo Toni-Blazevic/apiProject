@@ -32,6 +32,17 @@ namespace Projekt.API.Controllers
             return Ok(await _terrainService.GetAllAsync());
         }
 
+        [HttpGet("{terrainId}/reviews")]
+        public async Task<ActionResult> GetTerrainWithReviewsAsync(int terrainId)
+        {
+            var terrain = await _terrainService.GetTerrainWithReviewsAsync(terrainId);
+            if(terrain == null)
+            {
+                return NotFound();
+            }
+            return Ok(terrain);
+        }
+
         [HttpPost]
         public async Task<ActionResult> CreateTerain([FromBody] CreateTerrainDto dto)
         {
