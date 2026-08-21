@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Projekt.Aplication.DTO.Review;
 using Projekt.Aplication.DTO.Terrain;
 using Projekt.Aplication.Interfaces;
 using Projekt.Domain.Entities;
@@ -9,10 +10,12 @@ namespace Projekt.API.Controllers
     public class TerrainController : Controller
     {
         private readonly ITerrainService _terrainService;
+        private readonly IReviewService _reviewService;
 
-        public TerrainController(ITerrainService terrainService)
+        public TerrainController(ITerrainService terrainService, IReviewService reviewService)
         {
             _terrainService = terrainService;
+            _reviewService = reviewService;
         }
 
         [HttpGet("{id}")]
@@ -49,7 +52,25 @@ namespace Projekt.API.Controllers
             var terrain = await _terrainService.CreateAsync(dto);
             return CreatedAtAction(nameof(GetTerrainById), new { id = terrain.Id }, terrain);
         }
+        
+        [HttpPost("{id}/review")]
+        public async Task<ActionResult> CreateReview(int id, [FromBody] CreateReviewForUser reviewDto)
+        {
+            var review = new CreateReviewDto 
+                (
+                    1,
+                    id,
+                    reviewDto.Rating,
+                    reviewDto.Comment,
+                    DateTime.UtcNow
+                );
 
+            await _reviewService.CreateAsync(review);
+
+            var tearrin = await _terrainService.GetTerrainWithReviewsAsync(id);
+            return Ok(tearrin);
+        }
+       
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteTerrainById(int id)
         {

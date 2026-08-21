@@ -112,6 +112,17 @@ namespace Projekt.Aplication.Mapping
                     review.CreatedAt
                 );
         }
+        public static Review ToEntity(this CreateReviewDto dto)
+        {
+            return new Review
+            {
+                UserId = dto.UserId,
+                TerrainId = dto.TerrainId,
+                Rating = dto.Rating,
+                Comment = dto.Comment,
+                CreatedAt = dto.CreatedAt
+            };
+        }
         #endregion
     }
 }

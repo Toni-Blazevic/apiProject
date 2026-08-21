@@ -1,3 +1,9 @@
+D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\obj\Debug\net8.0\Projekt.Aplication.csproj.AssemblyReference.cache
+D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\obj\Debug\net8.0\Projekt.Aplication.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\obj\Debug\net8.0\Projekt.Aplication.AssemblyInfoInputs.cache
+D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\obj\Debug\net8.0\Projekt.Aplication.AssemblyInfo.cs
+D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\obj\Debug\net8.0\Projekt.Aplication.csproj.CoreCompileInputs.cache
+D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\obj\Debug\net8.0\Projekt.Aplication.sourcelink.json
 D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\bin\Debug\net8.0\Projekt.Aplication.deps.json
 D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\bin\Debug\net8.0\Projekt.Aplication.dll
 D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\bin\Debug\net8.0\Projekt.Aplication.pdb
@@ -5,14 +11,8 @@ D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projek
 D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\bin\Debug\net8.0\Projekt.Domain.dll
 D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\bin\Debug\net8.0\Projekt.DAL.pdb
 D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\bin\Debug\net8.0\Projekt.Domain.pdb
-D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\obj\Debug\net8.0\Projekt.Aplication.csproj.AssemblyReference.cache
-D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\obj\Debug\net8.0\Projekt.Aplication.GeneratedMSBuildEditorConfig.editorconfig
-D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\obj\Debug\net8.0\Projekt.Aplication.AssemblyInfoInputs.cache
-D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\obj\Debug\net8.0\Projekt.Aplication.AssemblyInfo.cs
-D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\obj\Debug\net8.0\Projekt.Aplication.csproj.CoreCompileInputs.cache
 D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\obj\Debug\net8.0\Projekt..B171E32A.Up2Date
 D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\obj\Debug\net8.0\Projekt.Aplication.dll
 D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\obj\Debug\net8.0\refint\Projekt.Aplication.dll
 D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\obj\Debug\net8.0\Projekt.Aplication.pdb
 D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\obj\Debug\net8.0\ref\Projekt.Aplication.dll
-D:\Users\Toni\Faks\2. God\4. semestar\Tehniologija weba 1\projekt\Projekt\Projekt.Aplication\obj\Debug\net8.0\Projekt.Aplication.sourcelink.json

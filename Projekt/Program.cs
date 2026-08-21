@@ -17,6 +17,8 @@ builder.Services.AddScoped<ISportTypeRepository, SportTypeRepository>();
 builder.Services.AddScoped<ISportTypeService, SportTypeService>();
 builder.Services.AddScoped<IReservationRepository,  ReservationRepository>();
 builder.Services.AddScoped<IReservationService, ReservationService>();
+builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
+builder.Services.AddScoped<IReviewService, ReviewService>();
 
 builder.Services.AddDbContext<Projekt.DAL.Data.ProjektContext>
     (options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
